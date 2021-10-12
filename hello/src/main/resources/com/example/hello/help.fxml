@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1009.0" styleClass="anchor" stylesheets="@../../../css/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hello.HelloController">
+    <children>
+        <HBox id="root" layoutX="8.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="992.0" spacing="3.0" style="-fx-border-color: A1B2C1;" styleClass="hbox" stylesheets="@../../../css/style.css">
+            <children>
+                <VBox prefHeight="549.0" prefWidth="246.0">
+                    <children>
+                        <HBox prefHeight="70.0" prefWidth="233.0">
+                            <children>
+                                <ImageView fitHeight="67.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../../../icons/menu.png" />
+                                    </image>
+                                </ImageView>
+                                <Button mnemonicParsing="false" onAction="#switchToMainScene" prefHeight="75.0" prefWidth="78.0">
+                                    <graphic>
+                                        <ImageView fitHeight="58.0" fitWidth="55.0" opacity="0.83" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../../../icons/back.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                            </children>
+                        </HBox>
+                        <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="268.0" style="-fx-border-color: ffffff;" styleClass=".button" stylesheets="@../../../css/style.css" text="Help">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <font>
+                                <Font name="000 BoogersBB [TeddyBear]" size="24.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../../../icons/help.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </children>
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </VBox>
+                <AnchorPane prefHeight="545.0" prefWidth="770.0">
+                    <children>
+                        <TextField alignment="TOP_LEFT" layoutX="14.0" layoutY="71.0" prefHeight="407.0" prefWidth="722.0">
+                            <font>
+                                <Font name="000 Augie [TeddyBear]" size="18.0" />
+                            </font></TextField>
+                        <Label layoutX="21.0" layoutY="23.0" text="INSTRUCTION">
+                            <font>
+                                <Font name="000 BoogersBB [TeddyBear]" size="25.0" />
+                            </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.2561576354679803" startX="0.28571428571428575" startY="0.8817733990147784">
+                           <stops>
+                              <Stop color="#4371b5" />
+                              <Stop color="#4371b5" offset="0.04375000000000001" />
+                              <Stop color="#b4cbf5" offset="0.11223214285714285" />
+                              <Stop color="#4574b5" offset="0.1525892857142858" />
+                              <Stop color="#b4cbf5" offset="0.38857142857142857" />
+                              <Stop color="#4572b5" offset="0.6109821428571429" />
+                              <Stop color="#b4cbf5" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Label>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="585.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../icons/private-detective.png" />
+                     </image>
+                  </ImageView>
+                    </children>
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding>
+                    <HBox.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                    </HBox.margin>
+                </AnchorPane>
+            </children>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </HBox>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-4.0" layoutY="-13.0" prefHeight="71.0" prefWidth="249.0" text="DICTIONARY">
+            <font>
+                <Font name="000 BoogersBB [TeddyBear]" size="36.0" />
+            </font>
+            <textFill>
+                <LinearGradient endX="0.6847290640394089" endY="0.812807881773399" startX="0.6502463054187193" startY="0.09852216748768461">
+                    <stops>
+                        <Stop color="#789078" />
+                        <Stop color="#b4d9b4" offset="0.0336607142857144" />
+                        <Stop color="#b4d9b4" offset="0.05625000000000009" />
+                        <Stop color="#789078" offset="0.153125" />
+                        <Stop color="#789078" offset="0.3656250000000001" />
+                        <Stop color="#b4d9b4" offset="0.6687500000000002" />
+                        <Stop color="#789078" offset="0.8375000000000002" />
+                        <Stop color="#789078" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </textFill>
+        </Label>
+    </children>
+</AnchorPane>

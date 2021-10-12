@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1009.0" styleClass="anchor" stylesheets="@../../../css/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hello.HelloController">
+   <children>
+      <HBox id="root" layoutX="8.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="992.0" spacing="3.0" style="-fx-border-color: A1B2C1;" styleClass="hbox" stylesheets="@../../../css/style.css">
+         <children>
+            <VBox prefHeight="549.0" prefWidth="246.0">
+               <children>
+                  <HBox prefHeight="70.0" prefWidth="233.0">
+                     <children>
+                        <ImageView fitHeight="67.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../icons/menu.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="69.0" prefWidth="83.0" />
+                        <Button alignment="TOP_CENTER" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="55.0" prefWidth="73.0" style="-fx-border-color: A1B2C1;" styleClass="search" stylesheets="@../../../css/style.css">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <graphic>
+                              <ImageView fitHeight="43.0" fitWidth="56.0" opacity="0.51" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../icons/search.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <tooltip>
+                              <Tooltip text="Search">
+                                 <font>
+                                    <Font name="000 AstroCity [TeddyBear]" size="14.0" />
+                                 </font></Tooltip>
+                           </tooltip>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Button mnemonicParsing="false" onAction="#switchToAdd" prefHeight="80.0" prefWidth="268.0" style="-fx-border-color: ffffff;" styleClass=".button" stylesheets="@../../../css/style.css" text="Add">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="000 BoogersBB [TeddyBear]" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../icons/add.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#switchToDelete" prefHeight="80.0" prefWidth="268.0" style="-fx-border-color: ffffff;" styleClass=".button" stylesheets="@../../../css/style.css" text="Delete">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="000 BoogersBB [TeddyBear]" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../icons/delete.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="268.0" style="-fx-border-color: ffffff;" styleClass=".button" stylesheets="@../../../css/style.css" text="Edit">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="000 BoogersBB [TeddyBear]" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../icons/edit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#switchToHelp" prefHeight="80.0" prefWidth="268.0" style="-fx-border-color: ffffff;" stylesheets="@../../../css/style.css" text="Help">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="000 BoogersBB [TeddyBear]" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../icons/help.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <styleClass>
+                        <String fx:value=".button" />
+                        <String fx:value=".tooltip" />
+                     </styleClass>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="268.0" style="-fx-border-color: ffffff;" styleClass=".button" stylesheets="@../../../css/style.css" text="Setting">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="000 BoogersBB [TeddyBear]" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="53.0" fitWidth="80.0" opacity="0.86" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../icons/settings.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="exit" mnemonicParsing="false" onAction="#exit" prefHeight="80.0" prefWidth="268.0" style="-fx-border-color: ffffff;" styleClass=".button" stylesheets="@../../../css/style.css" text="Exit">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="000 BoogersBB [TeddyBear]" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../icons/exit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <AnchorPane prefHeight="545.0" prefWidth="770.0">
+               <children>
+                  <TextField id="textField" fx:id="textField" layoutY="-2.0" prefHeight="56.0" prefWidth="563.0" promptText="SEARCH" style="-fx-border-color: A1B2C1;" styleClass="search" stylesheets="@../../../css/style.css">
+                     <font>
+                        <Font name="000 BeatDownBB [TeddyBear]" size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </TextField>
+                  <Button layoutX="581.0" layoutY="-2.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="36.0" style="-fx-border-color: A1B2C1;" styleClass="search" stylesheets="@../../../css/style.css">
+                     <graphic>
+                        <ImageView fitHeight="44.0" fitWidth="62.0" opacity="0.61" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../icons/refresh.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="refresh">
+                           <font>
+                              <Font name="000 AstroCity [TeddyBear]" size="14.0" />
+                           </font>
+                        </Tooltip>
+                     </tooltip>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <TextField layoutX="5.0" layoutY="68.0" prefHeight="446.0" prefWidth="730.0" style="-fx-background-color: E7EEFA;" />
+                  <ImageView fitHeight="111.0" fitWidth="107.0" layoutX="628.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../icons/private-detective.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </HBox.margin>
+            </AnchorPane>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-4.0" layoutY="-13.0" prefHeight="71.0" prefWidth="249.0" text="DICTIONARY">
+         <font>
+            <Font name="000 BoogersBB [TeddyBear]" size="36.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.6847290640394089" endY="0.812807881773399" startX="0.6502463054187193" startY="0.09852216748768461">
+               <stops>
+                  <Stop color="#789078" />
+                  <Stop color="#b4d9b4" offset="0.0336607142857144" />
+                  <Stop color="#b4d9b4" offset="0.05625000000000009" />
+                  <Stop color="#789078" offset="0.153125" />
+                  <Stop color="#789078" offset="0.3656250000000001" />
+                  <Stop color="#b4d9b4" offset="0.6687500000000002" />
+                  <Stop color="#789078" offset="0.8375000000000002" />
+                  <Stop color="#789078" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>

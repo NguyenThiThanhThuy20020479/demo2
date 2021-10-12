@@ -1,0 +1,21 @@
+.button{
+-fx-background-color : #B4CBF5;
+
+}
+.button:hover {
+-fx-background-color : #92B5EB;
+}
+
+.button:pressed {
+-fx-background-color : #EDEDED;
+}
+.anchor {
+-fx-background-color : #EDEDED;
+}
+.hbox{
+-fx-background-color : #CFE2FF;
+}
+.search{
+-fx-background-color : #FFFFFF;
+}
+
